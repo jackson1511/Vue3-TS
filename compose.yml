@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80" # Maps port 8080 on your host to port 80 inside the container
+    environment:
+      NODE_ENV: development
+    volumes:
+      - ./dist:/usr/share/nginx/html # Optional: Mount the built files for development debugging
+    container_name: vue-app-game-site

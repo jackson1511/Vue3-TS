@@ -1,0 +1,31 @@
+# Node.js dependencies
+node_modules
+
+# Build output
+dist
+
+# Logs
+*.log
+
+# OS and IDE-specific files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# npm-debug files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test output
+coverage/
+
+# Dockerfile and Compose related files (optional)
+.dockerignore
+docker-compose.yml
+Dockerfile
+
+# Other sensitive or irrelevant files
+*.md
+*.env
